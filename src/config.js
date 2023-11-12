@@ -7,5 +7,12 @@ export const db = {
 };
 
 export const corsConfig = {
-  origin: process.env.CORS_ORIGIN || "*",
+  corsUrl: process.env.CORS_ORIGIN || "*",
+};
+
+export const tokenInfo = {
+  accessTokenSecret: process.env.ACCESS_TOKEN_SECRET || "secret",
+  refreshTokenSecret: process.env.ACCESS_TOKEN_SECRET || "secret",
+  accessTokenValidity: parseInt(process.env.ACCESS_TOKEN_VALIDITY || "1d"),
+  refreshTokenValidity: parseInt(process.env.REFRESH_TOKEN_VALIDITY || "10d"),
 };
