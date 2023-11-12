@@ -16,3 +16,9 @@ export const tokenInfo = {
   accessTokenValidity: parseInt(process.env.ACCESS_TOKEN_VALIDITY || "1d"),
   refreshTokenValidity: parseInt(process.env.REFRESH_TOKEN_VALIDITY || "10d"),
 };
+
+export const cloudinaryConfig = {
+  cloud: process.env.CLOUD_NAME,
+  apiKey: process.env.CLOUDINAY_API_KEY,
+  apiSecret: process.env.CLOUDINARY_API_SECRET,
+};
