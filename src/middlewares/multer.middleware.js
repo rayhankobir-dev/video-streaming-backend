@@ -3,7 +3,7 @@ import multer from "multer";
 // multer middleware configuration
 const storage = multer.diskStorage({
   destination: function (req, file, callback) {
-    callback(null, "/public/temp/");
+    callback(null, "./public/temp/");
   },
   filename: function (req, file, callback) {
     const prefix = Date.now() + "-" + Math.round(Math.random() * 1e9);
